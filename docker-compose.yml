@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  c-socket:
+    container_name: c-socket
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: c-socket
+    volumes: 
+      - ./app:/app
+    tty: true
